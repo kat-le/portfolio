@@ -7,8 +7,8 @@
 
 
 @theme {
-  --color-primary: #050816;
-  --color-secondary: #aaa6c3;
+  --color-primary: #cfc1b4;
+  --color-secondary: #cfc1b4;
   --color-tertiary: #151030;
 
   --color-black-100: #100d25;
@@ -23,15 +23,16 @@
   --background-image-hero-pattern: url('/src/assets/herobg.png');
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
-  color-scheme: dark;
+@layer base {
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
 }
-
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -53,11 +54,11 @@
 }
 
 .violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: #8fa182;
+  background: linear-gradient(-90deg, #8fa182, 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #8fa182 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
